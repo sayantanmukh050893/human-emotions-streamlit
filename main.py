@@ -8,8 +8,6 @@ from keras.models import model_from_json
 import numpy
 import os
 import numpy as np
-from streamlit_webrtc import webrtc_streamer,RTCConfiguration
-import av
 
 #loading the model
 json_file = open('model.json', 'r')
