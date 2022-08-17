@@ -1,5 +1,5 @@
-keras
-numpy
-Pillow
-streamlit
-opencv-contrib-python-headless
+keras==2.7.0
+keras-nightly==2.5.0.dev2021032900
+Pillow==9.0.1
+streamlit==1.8.1
+opencv-contrib-python==4.5.5.62
