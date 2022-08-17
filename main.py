@@ -8,6 +8,8 @@ from keras.models import model_from_json
 import numpy
 import os
 import numpy as np
+from streamlit_webrtc import webrtc_streamer,RTCConfiguration
+import av
 
 #loading the model
 json_file = open('model.json', 'r')
@@ -27,10 +29,6 @@ st.title("Webcam Live Feed")
 image = Image.open('human_sentiments.jpg')
 st.image(image)
 
-# button = 
-# analyze = 
-# #disable_button = st.button("Disable Camera")
-st.camera_input("")
 run = st.checkbox('Enable Webcam')
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
@@ -60,28 +58,3 @@ while run:
     FRAME_WINDOW.image(frame)
 else:
     st.write('')
-
-# if st.checkbox('Run'):
-#     FRAME_WINDOW = st.image([])
-#     camera = cv2.VideoCapture(0)
-
-#     if st.button("Analyze Face"):
-#         st.write('Analyze')
-#         _, frame = camera.read()
-#         #frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-#         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-#         face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-#         faces = face.detectMultiScale(
-#         frame,
-#         scaleFactor=1.1,
-#         minNeighbors=5,
-#         minSize=(30, 30),
-#         flags=cv2.cv.CV_HAAR_SCALE_IMAGE
-#     )
-#         for (x, y, w, h) in faces:
-#             print(x,y,w,h)
-#             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-#         cv2.imshow('Video', frame)
-#         FRAME_WINDOW.image(frame)
-# else:
-#     st.write('')
