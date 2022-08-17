@@ -30,6 +30,7 @@ st.image(image)
 # button = 
 # analyze = 
 # #disable_button = st.button("Disable Camera")
+st.camera_input("")
 run = st.checkbox('Enable Webcam')
 FRAME_WINDOW = st.image([])
 camera = cv2.VideoCapture(0)
