@@ -1,6 +1,7 @@
-keras==2.9.0
-keras_nightly==2.5.0.dev2021032900
-numpy==1.22.2
+keras
+numpy
 opencv-contrib-python-headless
-Pillow==9.2.0
-streamlit==1.8.1
+Pillow
+streamlit
+pandas
+tensorflow
