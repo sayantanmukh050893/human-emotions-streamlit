@@ -2,5 +2,5 @@ keras
 numpy
 Pillow
 streamlit
-opencv-contrib-python
+opencv-contrib-python-headless
 tensorflow
