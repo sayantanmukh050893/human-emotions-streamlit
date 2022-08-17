@@ -3,4 +3,4 @@ keras_nightly==2.5.0.dev2021032900
 numpy
 Pillow
 streamlit==1.8.1
-opencv_python==4.5.2.52
+opencv-contrib-python==4.5.5.62
