@@ -6,4 +6,4 @@ numpy==1.22.2
 Pillow==9.2.0
 streamlit==1.8.1
 streamlit_webrtc==0.43.0
-~pencv_python==4.5.2.52
+opencv_python==4.5.2.52
