@@ -1,11 +1,6 @@
-numpy>=1.9.2
-scipy>=0.15.1
-scikit-learn>=0.18
-matplotlib>=1.4.3
-pandas>=0.19
-pickle5 ==0.0.9
-tensorflow
-Pillow
-opencv-contrib-python-headless
-keras
-streamlit
+keras==2.9.0
+keras_nightly==2.5.0.dev2021032900
+numpy==1.22.2
+opencv_python==4.5.2.52
+Pillow==9.2.0
+streamlit==1.8.1
